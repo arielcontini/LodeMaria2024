@@ -29,7 +29,7 @@ a{
 
 .header--img{
   width: 100%;
-  height: 960px;
+  height: 1080px;
   background: url(./header--desktop.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,6 +41,9 @@ a{
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 540px;
+  margin:0 auto;
+padding:0;
   height: auto;
   position: relative;
   justify-content: center;
@@ -121,13 +124,14 @@ a{
 
 .content--grid{
   display: grid;
-  grid-template-columns: repeat(2,400px);
-  gap: 6.4rem;
+  grid-template-columns: repeat(3,360px);
+  gap: 5.6rem;
   place-content: center;
   justify-content: center;
   align-items: start;
   margin: 0 auto;
-  padding: 8rem;
+  padding: 1.6rem;
+  text-align: center;
 }
 
 /* CATERING */
@@ -323,23 +327,22 @@ height: auto;
 .encontranos{
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  align-items:space-between;
   width: 100%;
   height: auto;
-  place-content: center;
-  align-items:center;
-  justify-content: center;
-  text-align: center;
-  color:var(--neutro-900); 
+  color:var(--neutro-900);
+  box-shadow: .12rem .13rem .15rem rgba(113, 36, 0, 0.49);
   padding-top: 0;
   background-color: var(--primary-50);
-  box-shadow: .12rem .13rem .15rem rgba(113, 36, 0, 0.49);
-  border-radius: 1.6rem;
+  border-radius: 1.8rem;
 }
 
 .encontranos h2{
   font-size: 2.4rem;
   font-weight: 700;
-  padding-top: .8rem;
+  padding: 0.8rem 0 0;
   color: var(--primary-950);
 }
 
@@ -359,7 +362,7 @@ height: auto;
 }
 
 .encontranos a img{
-  width: 10vw;
+  width: 8vw;
   height: auto;
   border-radius: 0;
 }
